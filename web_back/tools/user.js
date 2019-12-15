@@ -23,8 +23,6 @@ var user = {
             type: "POST",
             url: LOGOUT,
             success: function (res) {
-                console.log(res);
-
                 if (res.code === 200) {
                     options.success();
                 } else {
